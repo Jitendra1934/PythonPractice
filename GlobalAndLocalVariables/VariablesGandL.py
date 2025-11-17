@@ -5,3 +5,5 @@ def variable(): #function/method
     print(f"{initial} {name} ")
 
 variable() #Calling function
+
+
