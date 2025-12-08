@@ -7,11 +7,20 @@ class User:
     def get_Details(self):
         print(f"Name: {self.name}, Age: {self.age}, Role: {self.role}")
 
-user1 = User("jitendra", 20, "Tester")
-user1.get_Details()
+    def change_role(self, role):
+        self.role = role
 
-user2 = User("Ajay", 21, "Manual Tester")
-user2.get_Details()
 
-user3 = User("jitendra", 20, "Automation Tester")
-user3.get_Details()
+
+if __name__ == "__main__":
+    user1 = User("jitendra", 20, "Tester")
+    user1.get_Details()
+
+    user2 = User("Ajay", 21, "Manual Tester")
+    user2.get_Details()
+
+    user3 = User("jitendra", 20, "Automation Tester")
+    user3.get_Details()
+
+    user1.change_role("Analyst")
+    user1.get_Details()
